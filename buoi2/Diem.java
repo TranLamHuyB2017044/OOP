@@ -59,7 +59,12 @@ public class Diem {
 	public int giaTriY() {
 		return y;
 	}
-	
+	public void ganX(int x1) {
+		x = x1;
+	}
+	public void ganY(int y1) {
+		y = y1;
+	}
 	public static void main(String[] args) {
 		Diem A = new Diem(3,4);
 		System.out.print("Toa do diem A: ");

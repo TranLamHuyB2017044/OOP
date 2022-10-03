@@ -7,11 +7,19 @@ public class Date {
 	public Date(){
 		d = m = y = 1;
 	}
+	
 	public Date(int d1, int m1, int y1){
 		d = d1;
 		m = m1;
 		y = y1;
 	}
+	
+	public Date(Date a) {
+		a.d =1;
+		a.m =1;
+		a.y =1;
+	}
+	
 	public void nhap(){
 		Scanner sc = new Scanner (System.in);
 		do{
@@ -48,6 +56,9 @@ public class Date {
 	}
 	public void in(){
 		System.out.println(d+"/"+m+"/"+y);
+	}
+	public String toString() {
+		return d+"/"+m+"/"+y;
 	}
 	public Date cong(int n){
 		Date a = new Date(d,m,y);
