@@ -19,6 +19,11 @@ public class SinhVien {
 		tenHocPhan = new String[max];
 		diem = new String[max];
 	}
+	public SinhVien(String m, String h, Date n) {
+		m = new String();
+		h = new String();
+		n = new Date();
+	}
 	
 	public SinhVien(int max1) {
 		MSSV = new String();

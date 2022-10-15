@@ -59,10 +59,8 @@ public class Diem {
 	public int giaTriY() {
 		return y;
 	}
-	public void ganX(int x1) {
+	public void ganX(int x1, int y1) {
 		x = x1;
-	}
-	public void ganY(int y1) {
 		y = y1;
 	}
 	public static void main(String[] args) {
