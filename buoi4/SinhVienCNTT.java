@@ -41,20 +41,17 @@ public class SinhVienCNTT extends SinhVien{
 	
 	public void in() {
 		super.in();
-		System.out.println("Email id");
-		System.out.println(email);
-		System.out.println("User name");
-		System.out.println(taikhoan);
-		System.out.println("Password");
-		System.out.println("********");
+		System.out.println("[ Email id: " + email + ", " 
+		+ "User name: "+ taikhoan+ ", " 
+				+ "Password: ******** ]" );
 		
 	}
 	
-	public void layMK() {
+	public void getMK() {
 		System.out.println(matkhau);
 	}
 	public String toString() {
-		return super.toString() + "Email id" + email;
+		return super.toString() + "Email id: " + email;
 	}
 	
 	public void doiMatKhau() {
@@ -73,4 +70,11 @@ public class SinhVienCNTT extends SinhVien{
 	public String getEmail() {
 		return email;
 	}
+	
+	public String getTaiKhoan() {
+		return taikhoan;
+	}
+	
+	
+	
 }
